@@ -32,15 +32,24 @@ document.addEventListener("DOMContentLoaded", () =>{
         article.innerHTML=`
         <h1>${data.model}</h1>
         <p>${data.type} fra ${data.manufacturer}</p>
-        <h2>Feautures</h2>
+        <h2>Features</h2>
         <ul class="featurelist"></ul>
         
         
         `
-        document.body.append(article)
+        document.body.append(article);
 
         let list = document.querySelector(".featurelist")
         console.log(list)
+
+        data.features.forEach(feature => {
+            let item = document.createElement("li")
+            item.innerText = feature;
+            list.append(item)
+
+        });
+
+        
        
     })
 

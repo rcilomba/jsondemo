@@ -8,7 +8,7 @@ fetch("/data/bicycles.json")  // den skal ta fatt i .json
     data.bicycles.forEach(bicycle => {
 
         let link = document.createElement("a")
-        link.setAttribute("href", `detail.html?=id${bicycle.id}`)
+        link.setAttribute("href", `detail.html?id=${bicycle.id}`)
         link.innerHTML = `
         <h2>${bicycle.model}</h2>
 
