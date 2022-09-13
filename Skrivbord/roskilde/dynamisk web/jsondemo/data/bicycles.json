@@ -1,0 +1,17 @@
+{
+    "bicycles" : [
+        {
+            "id" :1,
+            "manufacturer": "Kildemoes",
+            "model": "Classis",
+            "type": "Klassisk herre"
+        },
+
+        {
+            "id" :2,
+            "manufacturer": "Scott",
+            "model": "VRJ2100",
+            "type": "Racer herre"
+        }
+    ]
+}
